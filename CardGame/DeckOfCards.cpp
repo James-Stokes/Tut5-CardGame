@@ -1,5 +1,12 @@
-#include "Deck"
+#include "DeckOfCards.h"
 
-class DeckOfCards{
-	Card *cards = new Card[20];
-};
+
+
+DeckOfCards::DeckOfCards()
+{
+}
+
+
+DeckOfCards::~DeckOfCards()
+{
+}
