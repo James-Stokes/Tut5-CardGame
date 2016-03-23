@@ -2,6 +2,10 @@
 
 using namespace std;
 
+Card::Card()
+{
+}
+
 Card::Card(int number = -1, string CardColour = "not set")
 {
 	this->number = number;

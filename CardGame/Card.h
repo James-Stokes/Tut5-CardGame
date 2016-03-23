@@ -9,6 +9,7 @@ private:
 	string CardColour;
 
 public:
+	Card();
 	Card(int, string);
 	string colour();
 	void print();
