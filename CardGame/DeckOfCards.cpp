@@ -41,17 +41,14 @@ void DeckOfCards::shuffle()
 
 Card DeckOfCards::draw()
 {
-	Card temp;
 	static int i = 1;
 	if (cards[numOfCards() - i] == NULL) {
 		i++;
 	}
-		temp = *cards[numOfCards() - i];
+		Card temp = *cards[numOfCards() - i];
 		delete cards[numOfCards() - i];
 		cards[numOfCards() - i] = NULL;
 		return temp;
-	
-	return temp;
 }
 
 Card * DeckOfCards::peek()

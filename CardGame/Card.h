@@ -5,12 +5,11 @@ using namespace std;
 class Card
 {
 private:
-	int number;
-	string CardColour;
+	const int number;
+	const string cardColour;
 
 public:
-	Card();
-	Card(int, string);
+	Card(int , string);
 	string colour();
 	void print();
 	~Card();

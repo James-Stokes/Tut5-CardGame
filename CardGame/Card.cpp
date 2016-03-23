@@ -2,24 +2,18 @@
 
 using namespace std;
 
-Card::Card()
+Card::Card(const int number, const string cardColour) : number(number), cardColour(cardColour)
 {
-}
-
-Card::Card(int number = -1, string CardColour = "not set")
-{
-	this->number = number;
-	this->CardColour = CardColour;
 }
 
 string Card::colour()
 {
-	return CardColour;
+	return cardColour;
 }
 
 void Card::print()
 {
-	cout << "colour: " << CardColour << " number: " << number << endl;
+	cout << "colour: " << cardColour << " number: " << number << endl;
 }
 
 Card::~Card()
